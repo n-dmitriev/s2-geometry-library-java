@@ -1,13 +1,11 @@
 plugins {
     id 'java'
-    //id 'maven-publish'
 }
 
 group='com.google'
 version='1.0'
 
 repositories {
-    //mavenLocal()
     mavenCentral()
 }
 
@@ -17,19 +15,3 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '3.8.2'
     compile group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.2'
 }
-
-//publishing {
-//    publications {
-//        maven(MavenPublication) {
-//            groupId = group
-//            artifactId = 'money_library'
-//            version = version
-//            from components.java
-//        }
-//    }
-//    repositories {
-//        maven {
-//            url = "../mvn-repo"
-//        }
-//    }
-//}
